@@ -3,7 +3,9 @@
   {{ partial "head.html" . }}
 <body class="container">
   {{ partial "navigation.html" . }}
-  {{ block "main" . }}{{ end }}
+  <div style="direction: rtl;">
+  	{{ block "main" . }}{{ end }}
+  </div>
   {{ partial "foot.html" . }}
 </body>
   {{ partial "scripts.html" . }}
